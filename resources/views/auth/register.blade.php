@@ -27,9 +27,22 @@
                 <p class="caption-login">
                     meningkatkan keterampilan Anda di era digitalisasi ini <br> akan sangat membantu dalam berbagai hal.
                 </p>
+
+                <img src="{{ asset('frontend/images/register-image.svg') }}" alt="" width="800">
             </div>
-            <div class="col-7">
-                <h1>Tes</h1>
+            <div class="col-7 py-5 px-5 text-center">
+                <img src="{{ asset('frontend/images/logo.svg') }}" alt="">
+                <h3 class="mt-5 fw-bold">Daftar Untuk Akun Baru</h3>
+                <p>Lengkapi form register dibawah dengan data yang benar</p>
+                <div class="card mx-auto border-0 bg-card-register" style="width: 32rem;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
