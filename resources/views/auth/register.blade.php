@@ -39,6 +39,7 @@
                 <div class="card mx-auto border-0 bg-card-register mt-5" style="width: 32rem;">
                     <div class="card-body p-5">
                         <form method="POST" action="{{ route('register') }}">
+                            @csrf
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nama</label>
                                 <input type="text" class="form-control" id="name" name="name">
