@@ -30,17 +30,30 @@
 
                 <img src="{{ asset('frontend/images/register-image.svg') }}" alt="" width="800">
             </div>
-            <div class="col-7 py-5 px-5 text-center">
-                <img src="{{ asset('frontend/images/logo.svg') }}" alt="">
-                <h3 class="mt-5 fw-bold">Daftar Untuk Akun Baru</h3>
-                <p>Lengkapi form register dibawah dengan data yang benar</p>
+            <div class="col-7 py-5 px-5">
+                <div class="text-center">
+                    <img src="{{ asset('frontend/images/logo.svg') }}" alt="">
+                    <h3 class="mt-5 fw-bold">Daftar Untuk Akun Baru</h3>
+                    <p>Lengkapi form register dibawah dengan data yang benar</p>
+                </div>
                 <div class="card mx-auto border-0 bg-card-register" style="width: 32rem;">
+                    <div class="card-body p-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
 
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
