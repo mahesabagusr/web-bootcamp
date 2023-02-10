@@ -36,23 +36,29 @@
                     <h3 class="mt-5 fw-bold">Daftar Untuk Akun Baru</h3>
                     <p>Lengkapi form register dibawah dengan data yang benar</p>
                 </div>
-                <div class="card mx-auto border-0 bg-card-register" style="width: 32rem;">
+                <div class="card mx-auto border-0 bg-card-register mt-5" style="width: 32rem;">
                     <div class="card-body p-5">
-                        <form>
+                        <form method="POST" action="{{ route('register') }}">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nama</label>
-                                <input type="text" class="form-control" id="name">
+                                <input type="text" class="form-control" id="name" name="name">
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                    name="email">
                             </div>
                             <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="password">
+                                <input type="password" class="form-control" id="password" name="password">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password_confirmation" class="form-label">Konfirmasi Password</label>
+                                <input type="password" class="form-control" id="password_confirmation"
+                                    name="password_confirmation">
                             </div>
 
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-success w-100 p-3 mt-5">Daftar</button>
                         </form>
                     </div>
                 </div>
